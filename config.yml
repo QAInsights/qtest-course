@@ -8,9 +8,11 @@ before:
     title: Welcome!
     body: new-issue.md
 steps:
-  - title: First step
-    description: The first step in your course
-    event: issues.assigned
-    link: '{{ repoUrl }}'
+  - title: Close this issue
     actions:
-      - type: closeIssue
+      - type: createIssue
+        title: Create a Thread Group
+        body: new-issue.md
+    description: Close this issue to go
+    link: '{{ repoUrl }}/issues/1'
+    event: issues.closed
