@@ -16,3 +16,10 @@ steps:
     description: Close this issue to go
     link: '{{ repoUrl }}/issues/1'
     event: issues.closed
+  - title: Go to next issue
+    actions:
+      - type: respond
+        with: new-issue.md
+    description: Go to next issue
+    event: push
+    link: '{{ repoUrl }}/issues/2'
